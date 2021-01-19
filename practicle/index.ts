@@ -1,6 +1,7 @@
 class Circle{
     radius:number
     color:string
+    PI:number = 3.14
 
     constructor(radiusValue:number,colorValue:string){
         this.radius = radiusValue
@@ -11,12 +12,12 @@ class Circle{
         console.log(`Circle [radius = ${this.radius} , color = ${this.color} ]`)
     }
 
-    getArea(){
+    getArea(radius:number = 1){
         console.log(Math.PI * this.radius * this.radius)
     }
 
-    getCircumference(){
-        console.log( 2 * Math.PI * this.radius)
+    getCircumference(PI?:number){
+        console.log( 2 * this.PI * this.radius)
     }
 }
 
